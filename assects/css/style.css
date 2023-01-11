@@ -1,0 +1,212 @@
+* { 
+    padding:0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+section {
+    position: relative;
+    width: 100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*======================
+    Header Start
+========================*/
+
+section header {
+    width: 100%;
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: flex-end;
+}
+section header ul {
+    display: flex;
+    list-style: none;
+    padding:10px;
+    justify-content:center;
+    align-items:center;
+}
+
+section header ul li {
+    margin-right:20px;
+}
+
+section header ul li img {
+    width: 37px;
+    cursor: pointer;
+    padding:5px;
+}
+section header ul li img:hover {
+    background-color: rgba(204, 204, 204, 0.603);
+    border-radius: 50%;
+}
+
+section header ul li a {
+    font-size:15px;
+    text-decoration: none;
+}
+section header ul li a:hover {
+    text-decoration: underline;
+}
+
+section header ul li button {
+    padding:10px 25px;
+    background-color:#1a73e8 ;
+    outline:none;
+    border:none;
+    color:white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+section header ul li button:hover {
+    background-color: #1b66c9;
+}
+
+/*======================
+    Header End
+========================*/
+
+
+
+
+/*======================
+    MAIN section Start
+========================*/
+section .main {
+    width: 600px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section .main .searchBox {
+    width:100%;
+    margin-top:20px;
+    position:relative;
+}
+section .main .searchBox .search {
+    margin:20px;
+}
+section .main .searchBox .icons {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    position:absolute;
+    top: 30px;
+    padding:0 42px;
+    pointer-events: none;
+}
+section .main .searchBox .icons .righticon img[alt='lence'] {
+    width:28px;
+    margin-left:10px;
+}
+section .main .searchBox input {
+    width:100%;
+    padding:15px 30px;
+    font-size:14px;
+    border-radius: 30px;
+    border:1px solid #dfe1e5;
+    outline:none;
+    padding-left:55px;
+    padding-right:100px;
+}
+section .main .searchBox input:hover,
+section .main .searchBox input:focus {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+/*======================
+    MAIN section end
+========================*/
+
+
+
+/*======================
+    button section Start
+========================*/
+section .main .searchBox .buttons  {
+    text-align: center;
+    margin:20px;
+}
+section .main .searchBox .buttons button {
+    padding:10px 20px;
+    border:1px solid transparent;
+    outline:none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+section .main .searchBox .buttons button:hover {
+    border:1px solid #ccc;
+}
+
+
+/*======================
+    button section End
+========================*/
+
+
+
+/*======================
+    Language section Start
+========================*/
+section .main .language ul {
+    list-style: none;
+    display:flex;
+}
+
+
+
+/*======================
+    Footer section Start
+========================*/
+footer {
+    width: 100%;
+    background-color: #F2F2F2;
+    position: absolute;
+    left:0;
+    bottom:0;
+}
+
+footer .row1 {
+    padding:30px;
+}
+
+footer .row1 p {
+    color:#70757a;
+}
+   
+
+footer .row2  {
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    border-top:1px solid #dadce0;
+    padding:30px;
+
+}
+footer .row2 ul {
+    list-style-type: none;
+    display: flex;
+}
+
+footer .row2 ul li {
+    margin-right:35px;
+}
+footer .row2 ul li:last-child {
+    margin-right: 0;
+}
+footer .row2 ul li a {
+    text-decoration: none;
+    color:#70757a;
+}
+footer .row2 ul li a:hover {
+    text-decoration:underline;
+}
